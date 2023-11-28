@@ -16,7 +16,7 @@ public class DriverFactory {
         WebDriverWait wait;
         @BeforeClass
         public void setUp(){
-            String browser =System.getProperty("browser","msedge");
+            String browser =System.getProperty("browser","firefox");
 
             if (browser.contains("firefox")){
                 driver = new FirefoxDriver();
